@@ -202,6 +202,18 @@ onMounted(() => {
     class="min-h-screen bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600"
   >
     <div class="container mx-auto px-4 py-6">
+      <!-- Header with logo -->
+      <div class="flex items-center justify-center mb-8">
+        <img 
+          src="/meteo-logo.svg" 
+          alt="MeteoVue Logo" 
+          class="w-16 h-16 mr-3 drop-shadow-lg animate-pulse"
+        />
+        <h1 class="text-4xl font-bold text-white tracking-wide">
+          MeteoVue
+        </h1>
+      </div>
+      
       <Search v-model="searchText" @search="handleSearch" />
 
       <!-- Loading State -->
